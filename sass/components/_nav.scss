@@ -1,0 +1,7 @@
+.nav {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 1fr 1fr;
+
+  background-color: var(--light);
+}
