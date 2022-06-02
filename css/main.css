@@ -508,6 +508,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   padding: 12rem;
+  background-color: var(--lightgreen);
 }
 
 .nav__dropl {
