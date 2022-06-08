@@ -12,7 +12,6 @@
   @include respond-to("small") {
     h1 {
       font-size: 35rem;
-      max-width: 500rem;
       line-height: 40rem;
       text-align: center;
     }

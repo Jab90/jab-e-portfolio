@@ -1,19 +1,20 @@
 .profile {
   padding: 10rem;
-
-  h2 {
-    font-size: 26rem;
-    text-align: right;
-  }
-  p {
-    font-size: 14rem;
-    text-align: right;
-    margin-bottom: 20rem;
+  section {
+    h1 {
+      font-size: 35rem;
+    }
+    p {
+      font-size: 20rem;
+      margin-bottom: 20rem;
+      line-height: 29rem;
+    }
   }
 
   @include respond-to("small") {
-    h2 {
-      font-size: 34rem;
+    display: flex;
+    img {
+      margin-right: 20rem;
     }
     p {
       font-size: 18rem;

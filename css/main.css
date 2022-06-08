@@ -474,6 +474,7 @@ h1 {
   -ms-grid-rows: min-content min-content;
       grid-template-rows: -webkit-min-content -webkit-min-content;
       grid-template-rows: min-content min-content;
+  border-bottom: 3px var(--lightgreen) solid;
   background-color: var(--light);
 }
 
@@ -491,7 +492,6 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   padding: 12rem;
-  border-bottom: 3px var(--lightgreen) solid;
 }
 
 .nav__icons {
@@ -540,9 +540,9 @@ h1 {
 
 @media (min-width: 767px) {
   .nav {
-    -ms-grid-columns: 1fr min-content minmax(590rem, auto) min-content 1fr;
-        grid-template-columns: 1fr -webkit-min-content minmax(590rem, auto) -webkit-min-content 1fr;
-        grid-template-columns: 1fr min-content minmax(590rem, auto) min-content 1fr;
+    -ms-grid-columns: 1fr min-content min-content min-content minmax(590rem, auto);
+        grid-template-columns: 1fr -webkit-min-content -webkit-min-content -webkit-min-content minmax(590rem, auto);
+        grid-template-columns: 1fr min-content min-content min-content minmax(590rem, auto);
   }
   .nav__lblock {
     -ms-grid-row: 1;
@@ -565,6 +565,10 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 20rem;
     background-color: var(--light);
     color: var(--gamma);
   }
@@ -600,7 +604,6 @@ h1 {
 @media (min-width: 767px) {
   .hero h1 {
     font-size: 35rem;
-    max-width: 500rem;
     line-height: 40rem;
     text-align: center;
   }
@@ -611,24 +614,32 @@ h1 {
   margin: 10rem auto;
 }
 
+.box {
+  border: 2px dotted red;
+}
+
 .profile {
   padding: 10rem;
 }
 
-.profile h2 {
-  font-size: 26rem;
-  text-align: right;
+.profile section h1 {
+  font-size: 35rem;
 }
 
-.profile p {
-  font-size: 14rem;
-  text-align: right;
+.profile section p {
+  font-size: 20rem;
   margin-bottom: 20rem;
+  line-height: 29rem;
 }
 
 @media (min-width: 767px) {
-  .profile h2 {
-    font-size: 34rem;
+  .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profile img {
+    margin-right: 20rem;
   }
   .profile p {
     font-size: 18rem;

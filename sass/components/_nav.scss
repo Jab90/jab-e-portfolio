@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   grid-template-rows: min-content min-content;
+  border-bottom: 3px var(--lightgreen) solid;
 
   background-color: var(--light);
 
@@ -12,7 +13,6 @@
     display: flex;
     align-items: center;
     padding: 12rem;
-    border-bottom: 3px var(--lightgreen) solid;
   }
 
   &__icons {
@@ -51,7 +51,10 @@
   }
 
   @include respond-to("small") {
-    grid-template-columns: 1fr min-content minmax(590rem, auto) min-content 1fr;
+    grid-template-columns: 1fr min-content min-content min-content minmax(
+        590rem,
+        auto
+      );
 
     &__lblock {
       grid-row: 1 / 2;
@@ -64,6 +67,8 @@
 
       display: flex;
       align-items: center;
+      justify-content: flex-end;
+      padding-right: 20rem;
       background-color: var(--light);
       color: var(--gamma);
       li {
