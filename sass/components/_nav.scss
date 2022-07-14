@@ -31,6 +31,15 @@
 
     background-color: var(--light);
     display: none;
+    background-color: light;
+    border: none;
+    color: gamma;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 14px;
+    margin: 10px 10px;
+    transition: 0.3s;
+    border-radius: 15px;
   }
 
   &__hamburger {
@@ -86,3 +95,56 @@
     }
   }
 }
+
+/* //This is css for flexbox// 
+.container {
+  max-width: 1200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  flex-basis: 120px;
+  height: 40px;
+  flex-shrink: 0;
+  padding-top: 6px;
+  font-weight: bold;
+  border: 1px red dotted;
+}
+
+.nav {
+  flex-basis: 600px;
+  height: 40px;
+  border: 1px green dotted;
+}
+.link {
+  flex-basis: 100px;
+  height: 40px;
+  background-color: rgb(147, 233, 160);
+  border-radius: 25px;
+  text-align: center;
+  margin: auto;
+  padding-top: 6px;
+  border: 1px orange dotted;
+}
+
+// This is HTML CODE FOR FLEX//
+  <div class="container flex">
+    <div class="logo">Jab</div>
+    <nav class="nav flex">
+      <div class="link">Home</div>
+      <div class="link">About Me</div>
+      <div class="link">Skills</div>
+      <div class="link">My projects</div>
+      <div class="link">Contact Me</div>
+    </nav>
+  </div>
+
+*/

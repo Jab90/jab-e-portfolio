@@ -1,0 +1,39 @@
+.aboutme {
+  h2 {
+    font-size: 25rem;
+    padding-right: 100px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 100px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16rem;
+    margin-bottom: 20rem;
+    line-height: 29rem;
+  }
+
+  .btn-2 {
+    background-color: lightgreen;
+    border: none;
+    color: gamma;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+    padding: 10px 10px;
+    font-size: 14px;
+    margin: 10px 10px;
+    transition: 0.3s;
+    border-radius: 15px;
+  }
+  .btn-2:hover {
+    background-color: grey;
+    color: white;
+  }
+  .p1 {
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+  }
+}

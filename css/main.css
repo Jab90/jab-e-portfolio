@@ -518,6 +518,16 @@ h1 {
   grid-column: 1 / -1;
   background-color: var(--light);
   display: none;
+  background-color: light;
+  border: none;
+  color: gamma;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 14px;
+  margin: 10px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 15px;
 }
 
 .nav__hamburger {
@@ -589,6 +599,58 @@ h1 {
   }
 }
 
+/* //This is css for flexbox// 
+.container {
+  max-width: 1200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  flex-basis: 120px;
+  height: 40px;
+  flex-shrink: 0;
+  padding-top: 6px;
+  font-weight: bold;
+  border: 1px red dotted;
+}
+
+.nav {
+  flex-basis: 600px;
+  height: 40px;
+  border: 1px green dotted;
+}
+.link {
+  flex-basis: 100px;
+  height: 40px;
+  background-color: rgb(147, 233, 160);
+  border-radius: 25px;
+  text-align: center;
+  margin: auto;
+  padding-top: 6px;
+  border: 1px orange dotted;
+}
+
+// This is HTML CODE FOR FLEX//
+  <div class="container flex">
+    <div class="logo">Jab</div>
+    <nav class="nav flex">
+      <div class="link">Home</div>
+      <div class="link">About Me</div>
+      <div class="link">Skills</div>
+      <div class="link">My projects</div>
+      <div class="link">Contact Me</div>
+    </nav>
+  </div>
+
+*/
 .hero {
   padding: 10rem;
   background-color: var(--light);
@@ -611,7 +673,7 @@ h1 {
 
 .container {
   max-width: 895rem;
-  margin: 10rem auto;
+  margin: 10rem 10rem;
 }
 
 .box {
@@ -623,26 +685,137 @@ h1 {
 }
 
 .profile section h1 {
-  font-size: 35rem;
+  font-size: 25rem;
+  padding-right: 100px;
 }
 
 .profile section p {
-  font-size: 20rem;
+  font-size: 16rem;
   margin-bottom: 20rem;
   line-height: 29rem;
 }
 
+.profile .btn {
+  background-color: lightgreen;
+  border: none;
+  color: gamma;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 10px;
+  font-size: 14px;
+  margin: 10px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.profile .btn:hover {
+  background-color: grey;
+  color: white;
+}
+
+.profile .btn-2 {
+  background-color: lightgreen;
+  border: none;
+  color: gamma;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 10px;
+  font-size: 14px;
+  margin: 10px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.profile .btn-2:hover {
+  background-color: grey;
+  color: white;
+}
+
 @media (min-width: 767px) {
-  .profile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .profile img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  img {
     margin-right: 20rem;
   }
-  .profile p {
+  p {
     font-size: 18rem;
   }
+}
+
+.aboutme h2 {
+  font-size: 25rem;
+  padding-right: 100px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 100px;
+  text-align: center;
+}
+
+.aboutme p {
+  font-size: 16rem;
+  margin-bottom: 20rem;
+  line-height: 29rem;
+}
+
+.aboutme .btn-2 {
+  background-color: lightgreen;
+  border: none;
+  color: gamma;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100px;
+  padding: 10px 10px;
+  font-size: 14px;
+  margin: 10px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.aboutme .btn-2:hover {
+  background-color: grey;
+  color: white;
+}
+
+.aboutme .p1 {
+  border: 2px solid lightgreen;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+input [type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid lightgreen;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input [type="submit"] {
+  background-color: light;
+  color: lightgreen;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input [type="submit"]:hover {
+  background-color: lightgrey;
+}
+
+.container_form {
+  border-radius: 5px;
+  background-color: lightgreen;
+  padding: 20px;
 }
 /*# sourceMappingURL=main.css.map */

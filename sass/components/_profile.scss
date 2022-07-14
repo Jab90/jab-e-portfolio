@@ -2,22 +2,55 @@
   padding: 10rem;
   section {
     h1 {
-      font-size: 35rem;
+      font-size: 25rem;
+      padding-right: 100px;
     }
     p {
-      font-size: 20rem;
+      font-size: 16rem;
       margin-bottom: 20rem;
       line-height: 29rem;
     }
   }
+  .btn {
+    background-color: lightgreen;
+    border: none;
+    color: gamma;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+    margin: 10px 10px;
+    transition: 0.3s;
+    border-radius: 15px;
+  }
+  .btn:hover {
+    background-color: grey;
+    color: white;
+  }
+  .btn-2 {
+    background-color: lightgreen;
+    border: none;
+    color: gamma;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+    margin: 10px 10px;
+    transition: 0.3s;
+    border-radius: 15px;
+  }
+  .btn-2:hover {
+    background-color: grey;
+    color: white;
+  }
+}
 
-  @include respond-to("small") {
-    display: flex;
-    img {
-      margin-right: 20rem;
-    }
-    p {
-      font-size: 18rem;
-    }
+@include respond-to("small") {
+  display: flex;
+  img {
+    margin-right: 20rem;
+  }
+  p {
+    font-size: 18rem;
   }
 }
